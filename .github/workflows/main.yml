@@ -28,9 +28,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          path: main
+      - uses: actions/checkout@v1
 
       # Set Current Date As Env Variable
       - name: Set current date as env variable
