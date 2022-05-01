@@ -12,7 +12,7 @@ jobs:
         id: decode_keystore
         uses: timheuer/base64-to-file@v1
         with:
-          fileName: 'app/your_signing_keystore.jks'
+          fileName: 'app/my-release-key.jks'
           encodedString: ${{ secrets.KEYSTORE }}
       - uses: actions/checkout@v2
       - name: set up JDK 1.8
