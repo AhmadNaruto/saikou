@@ -9,7 +9,7 @@ env:
 
   # The name of the Play Store
 
-  playstore_name: Frogobox ID
+  # playstore_name: Frogobox ID
 
 on:
 
