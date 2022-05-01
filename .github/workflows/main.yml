@@ -35,7 +35,7 @@ jobs:
 
     steps:
 
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       # Set Current Date As Env Variable
 
@@ -53,7 +53,7 @@ jobs:
 
       - name: Set Up JDK
 
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
 
         with:
 
@@ -101,7 +101,7 @@ jobs:
 
       - name: Upload APK Debug - ${{ env.repository_name }}
 
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
 
         with:
 
@@ -113,7 +113,7 @@ jobs:
 
       - name: Upload APK Release - ${{ env.repository_name }}
 
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
 
         with:
 
@@ -125,7 +125,7 @@ jobs:
 
       - name: Upload AAB (App Bundle) Release - ${{ env.repository_name }}
 
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
 
         with:
 
